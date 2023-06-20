@@ -1,0 +1,57 @@
+// Section One
+.sectionOne
+{
+  display: flex;
+  width: 100%;
+  height: 750px;
+  background: url('/assets/section1_images.jpg') no-repeat;
+  background-size: cover;
+  object-fit: contain;
+}
+.sectionOne .box{
+  position: relative;
+}
+
+.title{
+
+}
+
+.button{
+
+}
+
+// Section Two
+
+.sectionTwo
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 750px;
+  background-color: rgb(19, 88, 88);
+
+}
+.serviceTitle{
+text-align: center;
+}
+.cards
+{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+
+}
+.card{
+  min-height: 200px;
+}
+.serviceCard{
+  background-color: rgba(20, 122, 198, 0.22);
+}
