@@ -8,8 +8,12 @@
   background-size: cover;
   object-fit: contain;
 }
-.sectionOne .box{
-  position: relative;
+.box{
+  position: absolute;
+  margin-left:50%;
+  margin-top: 400px;
+  background: #147ac638;
+  height: 200px;
 }
 
 .title{
@@ -79,7 +83,7 @@ align-items: center;
 .sectionFour{
 
   width: 100%;
-  min-height: 550px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,7 +92,7 @@ align-items: center;
 }
 .whyUsTitle{
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   margin-top: 0;
 }
 .explaneHolder{
@@ -115,7 +119,10 @@ align-items: center;
 text-align: center;
 }
 .explaneTitle{
-
+  display: flex;
+}
+.explaneTitle p{
+  text-align:center;
 }
 
 // Section Five
@@ -123,7 +130,7 @@ text-align: center;
 // Section Six
 .sectionSix{
   width: 100%;
-  height: 750px;
+  height: 550px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -142,8 +149,8 @@ text-align: center;
   justify-content: center;
 }
 .circle{
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   overflow: hidden;
   margin: 15px;
@@ -152,4 +159,57 @@ text-align: center;
 width: 100%;
 height: auto;
 
+}
+
+///section 7
+.sectionSeven{
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 100%;
+height: 400px;
+}
+.scroll{
+display: flex;
+flex-direction: row;
+overflow: hidden;
+width: 900px;
+min-width: 300px;
+margin: 50px auto;
+}
+.scroll .cardHolder{
+  display: flex;
+  flex-shrink: 0;
+  animation: scroll 15s infinite ease-in-out;
+
+}
+.titleBox{
+  width: 350px;
+  height: 150px;
+  border-radius: 10px;
+  margin: 50px;
+  padding: 20px;
+  background-color: #147ac638;
+}
+
+@keyframes scroll {
+  0%,
+  20%{
+    transform: translateX(0);
+  }
+  25%,
+  45%{
+    transform: translateX(-100%);
+  }
+  50%,
+  70%{
+    transform: translateX(-200%);
+  }
+  75%,
+  95%{
+    transform: translateX(-300%);
+  }
+  100%{
+    transform: translateX(-400%);
+  }
 }
