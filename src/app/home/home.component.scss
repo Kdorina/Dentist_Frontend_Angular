@@ -38,13 +38,13 @@
 .serviceTitle{
 text-align: center;
 }
-.cards
+/* .cards
 {
 display: flex;
 justify-content: center;
 align-items: center;
 
-}
+} */
 .row{
   display: flex;
   justify-content: center;
@@ -53,12 +53,12 @@ align-items: center;
 
 }
 
-.card{
+.sectionTwo .card{
   min-height: 200px;
   background-color: #CBE2F2;
   border:none;
 }
-.servBtn{
+.sectionTwo .servBtn{
   border: 2px solid #3076dfcf ;
   width: 200px;
   border-radius: 30px;
@@ -72,11 +72,29 @@ align-items: center;
 // Section Three
 .sectionThree
 {
-
   width: 100%;
-  min-height: 750px;
+  min-height: 550px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(158, 192, 244, 0.17);
+}
+.aboutImg{
+/*   padding: 40px; */
+padding: 40px;
+  width: 500px;
+  height: 350px;
+}
+.aboutImg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+  border-radius: 10px;
+}
+.aboutTitle p{
+  width: 400px;
+
 }
 
 // Section Four
@@ -159,35 +177,48 @@ text-align: center;
 // Section Six
 .sectionSix{
   width: 100%;
-  height: 550px;
+  min-height: 650px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   background-color: rgba(158, 192, 244, 0.17);
 }
-.title{
+.doctorsTitle{
   text-align: center;
+  margin-top: 50px;
+  display: flex;
+
+}
+.doctorsTitle h1{
+  font-size: 50px;
   color: #3076dfea;
 }
-.title h1{
-  font-size: 50px;
-}
-.circles{
+.sectionSix .row{
   display: flex;
-  flex-direction: row;
   justify-content: center;
-}
-.circle{
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 15px;
-}
-.circle img{
-width: 100%;
-height: auto;
+  align-items: center;
 
+ /*  margin: 20px; */
+
+}
+  .sectionSix img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-size: cover;
+  }
+ .sectionSix .col{
+  display: flex;
+  justify-content: space-between;
+  }
+.sectionSix .card{
+  width: 250px;
+  height: 300px;
+  border:none;
+
+}
+.sectionSix .card-body{
+  background-color: #ffb83dbc;
 }
 
 ///section 7
