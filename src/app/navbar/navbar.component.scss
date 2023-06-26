@@ -1,0 +1,23 @@
+.nav
+{
+  background-color:#1771c1;
+  height: 80px;
+}
+.dropdown-menu{
+  background-color:  #82c8ee;
+}
+
+.dropdown-toggle:hover{
+
+}
+a{
+  color: #00008b;
+}
+a:hover{
+  color: white;
+}
+[aria-current]:not([aria-current="false"]) {
+  background-color: #82c8ee;
+  color: #00008b;
+  font-weight: 600;
+}
