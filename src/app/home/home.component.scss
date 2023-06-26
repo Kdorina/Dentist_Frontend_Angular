@@ -16,10 +16,19 @@
   height: 200px;
 }
 
-.title{
+.mainTitle{
+display: flex;
+justify-content: center;
+align-items:start;
+flex-direction: column;
+padding: 20px;
+}
+.mainTitle h1{
 
 }
+.mainTitle p{
 
+}
 .button{
 
 }
@@ -174,10 +183,12 @@ text-align: center;
 .contactTitle h1{
   font-weight: 600;
 }
+
+
 // Section Six
 .sectionSix{
   width: 100%;
-  min-height: 650px;
+  min-height: 550px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -193,34 +204,72 @@ text-align: center;
   font-size: 50px;
   color: #3076dfea;
 }
-.sectionSix .row{
+.dentistCards{
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-
- /*  margin: 20px; */
-
 }
-  .sectionSix img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  background-size: cover;
-  }
- .sectionSix .col{
+.dentistCards .cards{
   display: flex;
-  justify-content: space-between;
-  }
-.sectionSix .card{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  background: #147ac638;
   width: 250px;
-  height: 300px;
-  border:none;
+  height: 150px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.dentistCards  .cards:hover{
+  height: 400px;
+}
+
+.dentistCards .cards:hover .dentistImg{
+  width: 250px;
+  height: 250px;
+  margin-top: -80px;
+  scale: 0.75;
+}
+.dentistImg{
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  background: #ffffff;
+  border-radius: 150px;
+  transform: 0.5s;
+  margin-top: -80px;
+}
+.dentistImg img{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-size: cover;
+  object-fit: cover;
+}
+.dentistCards .cards .dentistConent{
+  width: 200px;
+  text-align: center;
+  margin-top: 20px;
+  height: 50px;
+  overflow: hidden;
+  color: aliceblue;
+}
+
+.dentistCards .cards:hover .dentistConent{
+  margin-top: 13px;
+  height: 250px;
+}
+
+.dentistCards .cards .dentistConent h5{
+  font-size: 30px;
+  font-weight: 600;
+}
+.dentistConent{
 
 }
-.sectionSix .card-body{
-  background-color: #ffb83dbc;
-}
-
 ///section 7
 .sectionSeven{
 display: flex;
